@@ -30,7 +30,6 @@ uint currentRef = wallpaper.GetBackgroundColor();
 
 (byte R, byte G, byte B) chosen =
     SameColor(currentRef, lightRef) ? Dark :
-    SameColor(currentRef, darkRef) ? Light :
     Light;
 
 // Ensure solid-color mode (clear wallpaper image)
