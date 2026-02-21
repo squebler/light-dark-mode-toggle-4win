@@ -13,39 +13,31 @@ using System.Runtime.InteropServices;
 (byte R, byte G, byte B) Light = (187, 187, 187);
 (byte R, byte G, byte B) Dark = (0, 0, 0);
 
+static uint ToColorRef((byte R, byte G, byte B) c)
+    => (uint)((c.B << 16) | (c.G << 8) | c.R); // 0x00BBGGRR
+
+static bool SameColor(uint a, uint b) => a == b;
+
 // ------------------------------------------------------------
-// Prompt
+// Run
 // ------------------------------------------------------------
-Console.WriteLine("Choose desktop color:");
-Console.WriteLine("0 = Light (187,187,187)");
-Console.WriteLine("1 = Dark  (0,0,0)");
-Console.Write("> ");
-
-var input = Console.ReadLine();
-
-(byte R, byte G, byte B) chosen = input switch
-{
-    "0" => Light,
-    "1" => Dark,
-    _ => default
-};
-
-if (chosen == default && input is not ("0" or "1"))
-{
-    Console.WriteLine("Invalid input.");
-    return;
-}
-
-// COLORREF format = 0x00BBGGRR
-uint colorRef = (uint)(chosen.B << 16 | chosen.G << 8 | chosen.R);
-
 var wallpaper = (IDesktopWallpaper)new DesktopWallpaper();
+
+uint lightRef = ToColorRef(Light);
+uint darkRef = ToColorRef(Dark);
+
+uint currentRef = wallpaper.GetBackgroundColor();
+
+(byte R, byte G, byte B) chosen =
+    SameColor(currentRef, lightRef) ? Dark :
+    SameColor(currentRef, darkRef) ? Light :
+    Light;
 
 // Ensure solid-color mode (clear wallpaper image)
 wallpaper.SetWallpaper(null, "");
 
 // Set background color. This persists through logout.
-wallpaper.SetBackgroundColor(colorRef);
+wallpaper.SetBackgroundColor(ToColorRef(chosen));
 
 Console.WriteLine($"Set desktop to {chosen.R},{chosen.G},{chosen.B}");
 Console.WriteLine("Press Enter to exit.");
