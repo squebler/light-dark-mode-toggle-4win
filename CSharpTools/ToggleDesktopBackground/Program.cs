@@ -40,8 +40,6 @@ wallpaper.SetWallpaper(null, "");
 wallpaper.SetBackgroundColor(ToColorRef(chosen));
 
 Console.WriteLine($"Set desktop to {chosen.R},{chosen.G},{chosen.B}");
-Console.WriteLine("Press Enter to exit.");
-Console.ReadLine();
 
 
 // ============================================================
