@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.37012.4
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToggleDesktopBackground", "ToggleDesktopBackground\ToggleDesktopBackground.csproj", "{B4C04258-1CC7-4FE2-950A-E4336DBEDD25}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToggleLightTheme", "ToggleLightTheme\ToggleLightTheme.csproj", "{2B820BC9-38B4-407D-9623-40186BA5B4B2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToggleLightDarkMode", "ToggleLightDarkMode\ToggleLightDarkMode.csproj", "{F1BBAC16-7CDF-455E-A9F4-9BBF1DF38D02}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B4C04258-1CC7-4FE2-950A-E4336DBEDD25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B4C04258-1CC7-4FE2-950A-E4336DBEDD25}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B4C04258-1CC7-4FE2-950A-E4336DBEDD25}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B4C04258-1CC7-4FE2-950A-E4336DBEDD25}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2B820BC9-38B4-407D-9623-40186BA5B4B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2B820BC9-38B4-407D-9623-40186BA5B4B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2B820BC9-38B4-407D-9623-40186BA5B4B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2B820BC9-38B4-407D-9623-40186BA5B4B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1BBAC16-7CDF-455E-A9F4-9BBF1DF38D02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1BBAC16-7CDF-455E-A9F4-9BBF1DF38D02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1BBAC16-7CDF-455E-A9F4-9BBF1DF38D02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1BBAC16-7CDF-455E-A9F4-9BBF1DF38D02}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
