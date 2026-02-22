@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToggleDesktopBackground", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToggleLightTheme", "ToggleLightTheme\ToggleLightTheme.csproj", "{2B820BC9-38B4-407D-9623-40186BA5B4B2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToggleLightDarkMode", "ToggleLightDarkMode\ToggleLightDarkMode.csproj", "{F1BBAC16-7CDF-455E-A9F4-9BBF1DF38D02}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{2B820BC9-38B4-407D-9623-40186BA5B4B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B820BC9-38B4-407D-9623-40186BA5B4B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B820BC9-38B4-407D-9623-40186BA5B4B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1BBAC16-7CDF-455E-A9F4-9BBF1DF38D02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1BBAC16-7CDF-455E-A9F4-9BBF1DF38D02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1BBAC16-7CDF-455E-A9F4-9BBF1DF38D02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1BBAC16-7CDF-455E-A9F4-9BBF1DF38D02}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
